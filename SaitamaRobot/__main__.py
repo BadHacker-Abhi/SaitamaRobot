@@ -73,10 +73,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+Hi {}, my name is {𝙿𝙸𝙺𝙰𝙲𝙷𝚄}! 
+I am a powerful group management bot.
+Made by :- @Bad_Boy_Abhii
+You can find the ist of available commands with /help.
 """
 
 HELP_STRINGS = """
@@ -87,7 +87,6 @@ the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
@@ -100,12 +99,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
-
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+SAITAMA_IMG = "https://telegra.ph/file/4aa138e0ffad2b07e602c.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -231,23 +225,23 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                url=f"https://t.me/{KoraSupport9}",
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
+                                url="https://t.me/Korasupport9",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🧾 Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
+                                url="https://t.me/KoraSupport",
                             )
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                url="https://github.com/BadHacker-Abhi/SaitamaRobot"
                             )
                         ],
                     ]
@@ -255,7 +249,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Yup! I am jinda not margya😂!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
