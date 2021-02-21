@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {𝙿𝙸𝙺𝙰𝙲𝙷𝚄}! 
+Hi {}, my name is {Pikachu}! 
 I am a powerful group management bot.
 Made by :- @Bad_Boy_Abhii
 You can find the ist of available commands with /help.
