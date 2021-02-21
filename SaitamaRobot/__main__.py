@@ -85,7 +85,7 @@ I'm a Hero For Fun and help admins manage their groups with One Punch! Have a lo
 the things I can help you with.
 
 *Main* commands available:
- • /help: PM's you this message.
+ • /help: PM's you this message. 
  • /help <module name>: PM's you info about that module.
  • /settings:
    • in PM: will send you your settings for all supported modules.
@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🚑 Support Group",
-                                url=f"https://t.me/{KoraSupport9}",
+                                url=f"https://t.me/{KoraSupport}",
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates Channel",
